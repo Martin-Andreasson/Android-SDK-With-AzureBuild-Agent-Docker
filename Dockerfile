@@ -11,39 +11,9 @@ RUN \
 RUN \
   apt-get update && \
   apt-get install -y --no-install-recommends \
-    apt-transport-https \
-    ca-certificates \
-    curl \
-    dbus \
-    fakeroot \
-    git \
-    gpg-agent \
-    iputils-ping \
-    jq \
-    libcurl4 \
-    libgconf-2-4 \
-    libsecret-1-dev \
-    libssl1.0 \
-    libunwind8 \
-    libxkbfile-dev \
-    libxss1 \
-    locales \
-    netcat \
-    openssh-client \
-    pkg-config \
-    rpm \
-    rsync\
-    shellcheck \
     software-properties-common \
-    sudo  \
-    tzdata \
-    unzip \
     wget \
-    xorriso \
-    xvfb \
-    xz-utils \
-    zip \
-    zsync && \
+    curl \
   rm -rf /var/lib/apt/lists/*
 
 # Setup the locale
